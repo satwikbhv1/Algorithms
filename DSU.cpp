@@ -1,3 +1,4 @@
+//This is DSU class is made using both path compression and union by rank.  
 class DSU
 {
     vector<int> par,_rank;
