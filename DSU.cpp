@@ -3,13 +3,8 @@ class DSU
     vector<int> par,_rank;
     DSU(int n)
     {
-        par.resize(n+1);
-        _rank.resize(n+1);
-        for(int i=1;i<=n;i++)
-        {
-            par[i]=-1;
-            _rank[i]=1;
-        }
+        par.resize(n+1,-1);
+        _rank.resize(n+1,1);
     }
     int find(int x)
     {
